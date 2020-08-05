@@ -163,6 +163,7 @@ public class IdentificadorDNI {
 
         num_DNI = Integer.parseInt(DNI.substring(0, 8));
         letra_DNI = DNI.substring(8, 9);
+        entrada.close();
 
         boolean respuesta = llamar_funciones.MetodoIdentificador(num_DNI, letra_DNI);
 
